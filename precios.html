@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios y Cotizador - Cajas Repostería</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Cajas Repostería</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="experiencia.html">Nuestra Experiencia</a></li>
+                <li><a href="precios.html">Precios y Cotizador</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Listas de Precios y Cotizador Online</h1>
+
+        <!-- Sección del Cotizador Interactivo -->
+        <section class="quote-box">
+            <h2>Cotizador de Cajas</h2>
+            <p style="text-align: center; margin-bottom: 1.5rem;">Selecciona los productos, cantidades y arma tu pedido a medida.</p>
+            
+            <div id="quote-rows-container">
+                <!-- Las filas del cotizador se inyectan mediante JavaScript -->
+            </div>
+
+            <button type="button" class="btn-action" id="add-row-btn" style="margin-top: 1rem;">+ Agregar otro tipo de caja</button>
+
+            <div class="quote-summary">
+                <p>Subtotal productos: <span id="subtotal-amount">$0</span> CLP</p>
+                <p>Envío estimado (Santiago RM): <span id="shipping-amount">$4.500</span> CLP</p>
+                <h3 style="margin-top: 0.5rem;">Total con envío incluido: <span id="total-amount">$0</span> CLP</h3>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <button type="button" class="btn-action" id="send-whatsapp-quote" style="font-size: 1.1rem; padding: 0.8rem 2rem;">Enviar cotización por WhatsApp 💬</button>
+            </div>
+        </section>
+
+        <!-- Listas de Precios detalladas -->
+        <section style="margin-top: 4rem;">
+            <h2>Listas de Precios por Categoría</h2>
+
+            <!-- Cajas para Tortas -->
+            <h3>1. Cajas para Tortas (Medidas Base y Altura)</h3>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Modelo / Medidas (Base x Alto en cm)</th>
+                        <th>Precio por Unidad (CLP)</th>
+                        <th>Pack x 10 unidades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Base 20 cm -->
+                    <tr><td>20 x 20 x 15 cm</td><td>$850</td><td>$8.000</td></tr>
+                    <tr><td>20 x 20 x 20 cm</td><td>$920</td><td>$8.700</td></tr>
+                    <tr><td>20 x 20 x 25 cm</td><td>$990</td><td>$9.400</td></tr>
+                    <tr><td>20 x 20 x 30 cm</td><td>$1.060</td><td>$10.100</td></tr>
+                    <tr><td>20 x 20 x 35 cm</td><td>$1.130</td><td>$10.800</td></tr>
+                    <tr><td>20 x 20 x 40 cm</td><td>$1.200</td><td>$11.500</td></tr>
+                    <!-- Base 25 cm -->
+                    <tr><td>25 x 25 x 15 cm</td><td>$1.050</td><td>$10.000</td></tr>
+                    <tr><td>25 x 25 x 20 cm</td><td>$1.130</td><td>$10.800</td></tr>
+                    <tr><td>25 x 25 x 25 cm</td><td>$1.210</td><td>$11.600</td></tr>
+                    <tr><td>25 x 25 x 30 cm</td><td>$1.290</td><td>$12.400</td></tr>
+                    <tr><td>25 x 25 x 35 cm</td><td>$1.370</td><td>$13.200</td></tr>
+                    <tr><td>25 x 25 x 40 cm</td><td>$1.450</td><td>$14.000</td></tr>
+                    <!-- Base 30 cm -->
+                    <tr><td>30 x 30 x 15 cm</td><td>$1.300</td><td>$12.500</td></tr>
+                    <tr><td>30 x 30 x 20 cm</td><td>$1.390</td><td>$13.400</td></tr>
+                    <tr><td>30 x 30 x 25 cm</td><td>$1.480</td><td>$14.300</td></tr>
+                    <tr><td>30 x 30 x 30 cm</td><td>$1.570</td><td>$15.200</td></tr>
+                    <tr><td>30 x 30 x 35 cm</td><td>$1.660</td><td>$16.100</td></tr>
+                    <tr><td>30 x 30 x 40 cm</td><td>$1.750</td><td>$17.000</td></tr>
+                    <!-- Base 35 cm -->
+                    <tr><td>35 x 35 x 15 cm</td><td>$1.600</td><td>$15.500</td></tr>
+                    <tr><td>35 x 35 x 20 cm</td><td>$1.710</td><td>$16.600</td></tr>
+                    <tr><td>35 x 35 x 25 cm</td><td>$1.820</td><td>$17.700</td></tr>
+                    <tr><td>35 x 35 x 30 cm</td><td>$1.930</td><td>$18.800</td></tr>
+                    <tr><td>35 x 35 x 35 cm</td><td>$2.040</td><td>$19.900</td></tr>
+                    <tr><td>35 x 35 x 40 cm</td><td>$2.150</td><td>$21.000</td></tr>
+                </tbody>
+            </table>
+
+            <!-- Cajas Sweets -->
+            <h3>2. Cajas Sweets</h3>
+            <table class="price-table">
+                <thead><tr><th>Modelo</th><th>Precio Unidad</th><th>Pack x 10</th></tr></thead>
+                <tbody>
+                    <tr><td>Sweets Estándar (20x15x5 cm)</td><td>$500</td><td>$4.500</td></tr>
+                    <tr><td>Sweets Mediana (25x20x6 cm)</td><td>$650</td><td>$6.000</td></tr>
+                    <tr><td>Sweets Grande (30x25x8 cm)</td><td>$850</td><td>$8.000</td></tr>
+                </tbody>
+            </table>
+
+            <!-- Cajas Bandeja Fiestera -->
+            <h3>3. Cajas Bandeja Fiestera</h3>
+            <table class="price-table">
+                <thead><tr><th>Modelo</th><th>Precio Unidad</th><th>Pack x 10</th></tr></thead>
+                <tbody>
+                    <tr><td>Bandeja Fiestera Mediana (40x30x8 cm)</td><td>$1.400</td><td>$13.500</td></tr>
+                    <tr><td>Bandeja Fiestera Grande (50x35x10 cm)</td><td>$1.800</td><td>$17.500</td></tr>
+                </tbody>
+            </table>
+
+            <!-- Cajas con Borde -->
+            <h3>4. Cajas con Borde</h3>
+            <table class="price-table">
+                <thead><tr><th>Modelo</th><th>Precio Unidad</th><th>Pack x 10</th></tr></thead>
+                <tbody>
+                    <tr><td>Caja con Borde Cuadrada (25x25x15 cm)</td><td>$1.200</td><td>$11.500</td></tr>
+                    <tr><td>Caja con Borde Rectangular (35x25x15 cm)</td><td>$1.500</td><td>$14.500</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Cajas para Tortas y Postres — Santiago de Chile</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+/* Reset y Estilos Globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #030baa;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Navegación */
+header {
+    background-color: rgba(3, 11, 170, 0.95);
+    border-bottom: 1px solid #ffffff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/* Envoltorio principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 3rem 0 1.5rem 0;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 4rem;
+}
+
+/* TARJETAS CON BORDE BLANCO Y ESQUINAS REDONDEADAS */
+.card-border {
+    border: 2px solid #ffffff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    background: transparent;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Grid de Productos y Secciones */
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Tarjetas de Productos Clickeables */
+.product-card {
+    display: block;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.product-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Sección Nohi Repostera */
+.nohi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.nohi-card {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.nohi-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+}
+
+/* Medio Ambiente y Certificados */
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.cert-card {
+    border: 1px dashed #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* Tarjetas Informativas (Horarios, Contacto, Ubicación) */
+.info-card {
+    text-align: center;
+}
+
+.info-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-card li {
+    margin-bottom: 0.5rem;
+}
+
+/* Pasos de compra */
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.step-card {
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.step-number {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #ffffff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+/* Estilos para Tablas de Precios y Cotizador */
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.price-table th, .price-table td {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.price-table th {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.quote-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.quote-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .quote-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.quote-row select, .quote-row input {
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    background: #030baa;
+    color: #ffffff;
+    width: 100%;
+}
+
+.btn-action {
+    background: #ffffff;
+    color: #030baa;
+    font-weight: bold;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-action:hover {
+    opacity: 0.9;
+}
+
+.btn-danger {
+    background: #ff4d4d;
+    color: #ffffff;
+}
+
+.quote-summary {
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    text-align: right;
+}
