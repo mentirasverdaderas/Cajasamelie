@@ -353,7 +353,7 @@ footer {
 }
 
 .text-center h1 {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     font-weight: normal;
     margin-bottom: 10px;
 }
@@ -361,7 +361,7 @@ footer {
 .section-subtitle {
     font-family: 'Georgia', serif;
     font-size: 1.5rem;
-    font-weight: normal;
+    font-weight: 400;
     margin-top: 0;
     margin-bottom: 15px;
 }
