@@ -330,7 +330,7 @@ footer {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     font-size: 2.2rem;
     margin: 5px 0 0 0;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* Ajuste automático para pantallas de celulares */
@@ -342,4 +342,38 @@ footer {
     .hero-title {
         font-size: 1.3rem;
     }
+}
+
+/* Estilos para el bloque de títulos bajo el hero */
+.text-center {
+    text-align: center;
+    max-width: 900px;
+    margin: 40px auto 30px auto; /* Centra el bloque y le da espacio arriba y abajo */
+    padding: 0 20px;
+}
+
+.text-center h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Aplica la cursiva solo a la palabra envuelta en <em> */
+.section-subtitle em {
+    font-style: italic;
+}
+
+.section-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
 }
