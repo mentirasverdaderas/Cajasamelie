@@ -320,9 +320,9 @@ footer {
 .hero-subtitle {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     font-size: 2rem;
-    font-weight: 300;           /* Grosor muy delgado */
-    letter-spacing: 2px;        /* Da un toque elegante y respirado */
-    text-transform: uppercase; /* Opcional: Mayúsculas elegantes */
+    font-weight: 500;           /* Grosor muy delgado */
+    font-style: italic; /* <-- ESTA LÍNEA ACTIVA LA CURSIVA */
+    letter-spacing: 1px;        /* Da un toque elegante y respirado */
     margin: 0;
 }
 
