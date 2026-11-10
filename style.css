@@ -287,7 +287,7 @@ footer {
    SECCIÓN HERO CON IMAGEN DE FONDO Y CAPA AZUL
    ========================================== */
 .hero {
-    background-image: url('fondohero.webp'); 
+    background-image: url('Imagenes/fondohero.webp'); 
     background-size: cover;          /* Ocupa todo el ancho sin deformarse */
     background-position: center;     /* Mantiene el centro visible en PC y móviles */
     background-repeat: no-repeat;
