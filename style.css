@@ -318,15 +318,19 @@ footer {
 }
 
 .hero-subtitle {
-    font-family: 'Brush Script MT', cursive; /* O la tipografía manuscrita que utilices */
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     font-size: 2rem;
+    font-weight: 300;           /* Grosor muy delgado */
+    letter-spacing: 2px;        /* Da un toque elegante y respirado */
+    text-transform: uppercase; /* Opcional: Mayúsculas elegantes */
     margin: 0;
 }
 
 .hero-title {
-    font-size: 1.8rem;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 2.2rem;
     margin: 5px 0 0 0;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /* Ajuste automático para pantallas de celulares */
