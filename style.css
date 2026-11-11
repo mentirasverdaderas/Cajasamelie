@@ -166,6 +166,15 @@ section {
     text-align: center;
 }
 
+/* Ajusta el tamaño de los íconos SVG dentro de las tarjetas */
+.cert-card img {
+    width: 32px;         /* Tamaño deseado en pantalla (puedes probar con 24px, 28px o 32px) */
+    height: 32px;        /* Mantiene la proporción cuadrada */
+    object-fit: contain; /* Garantiza que el ícono no se distorsione */
+    display: block;
+    margin: 0 auto 12px auto; /* Centra el ícono y le da un espacio con el texto de abajo */
+}
+
 /* Tarjetas Informativas (Horarios, Contacto, Ubicación) */
 .info-card {
     text-align: center;
