@@ -440,10 +440,18 @@ footer {
 /* Tamaño y centrado del icono SVG */
 .nohi-icon img {
     width: 120px;                    /* Ajusta el tamaño según tu diseño */
-    height: 120px;
+    height: auto;
     object-fit: contain;
     margin: 0 auto 20px auto;
     display: block;
+    transform: scale(1.3); /* Agranda la ilustración sin aumentar el espacio que ocupa la caja */
+}
+
+.nohi-icon {
+    margin: 10px 0 10px 0; /* Reduce el espacio vertical con el texto de arriba y de abajo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nohi-description {
