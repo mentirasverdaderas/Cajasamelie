@@ -137,7 +137,7 @@ section {
 }
 
 .nohi-card {
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid #ffffff;
     border-radius: 12px;
     padding: 1rem;
     text-align: center;
@@ -182,7 +182,7 @@ section {
 
 .info-card .icon {
     font-size: 2.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 }
 
 .info-card ul {
