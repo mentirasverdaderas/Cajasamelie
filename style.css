@@ -447,7 +447,7 @@ footer {
 
 /* Ajuste del SVG horizontal */
 .nohi-icon img {
-    width: 240px;            /* Ajusta este valor según qué tan grande quieras el logo */
+    width: 300px;            /* Ajusta este valor según qué tan grande quieras el logo */
     height: auto;            /* Mantiene la proporción horizontal exacta sin deformar */
     max-width: 90%;          /* Evita que se desborde en pantallas de celular */
     display: block;
