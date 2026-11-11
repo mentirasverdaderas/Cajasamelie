@@ -160,8 +160,8 @@ section {
 }
 
 .cert-card {
-    border: 1px dashed #ffffff;
-    border-radius: 12px;
+    border: 2px dashed #ffffff;
+    border-radius: 8px;
     padding: 1.5rem;
     text-align: center;
 }
@@ -203,7 +203,7 @@ section {
 }
 
 .step-card {
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
     border-radius: 12px;
     padding: 1.5rem;
     text-align: center;
