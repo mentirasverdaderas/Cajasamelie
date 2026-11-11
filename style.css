@@ -439,8 +439,8 @@ footer {
 
 /* Tamaño y centrado del icono SVG */
 .nohi-icon img {
-    width: 70px;                    /* Ajusta el tamaño según tu diseño */
-    height: 70px;
+    width: 120px;                    /* Ajusta el tamaño según tu diseño */
+    height: 120px;
     object-fit: contain;
     margin: 0 auto 20px auto;
     display: block;
