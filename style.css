@@ -80,22 +80,30 @@ section {
 .card-border {
     border: 2px solid #ffffff;
     border-radius: 16px;
-    padding: 1.5rem;
+    padding: 25px;
     background: transparent;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: white;
+    width: 31%;                
+    max-width: 350px;                       
+    box-sizing: border-box;    
 }
 
 /* Grid de Productos y Secciones */
 .grid-4 {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;     /* Permite flexibilidad pero con los anchos bien medidos se quedan en línea */
 }
 
 .grid-3 {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;     /* Permite flexibilidad pero con los anchos bien medidos se quedan en línea */
 }
 
 /* Tarjetas de Productos Clickeables */
@@ -342,13 +350,19 @@ footer {
     .hero-title {
         font-size: 1.3rem;
     }
+    .card-border {
+        width: 100%;           /* En el celular ocupan todo el ancho (una debajo de otra) */
+        max-width: 100%;
+        padding: 18px;         /* Un padding en px más compacto para que no gaste espacio en la pantalla del teléfono */
+        margin-bottom: 20px;   /* Separación entre tarjeta y tarjeta */
+    }
 }
 
 /* Estilos para el bloque de títulos bajo el hero */
 .text-center {
     text-align: center;
     max-width: 900px;
-    margin: 40px auto 30px auto; /* Centra el bloque y le da espacio arriba y abajo */
+    margin: 40px auto 40px auto; /* Centra el bloque y le da espacio arriba y abajo */
     padding: 0 20px;
 }
 
